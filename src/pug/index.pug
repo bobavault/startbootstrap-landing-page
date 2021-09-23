@@ -28,10 +28,10 @@ html(lang='en')
         nav.navbar.navbar-light.bg-light.static-top
             .container
                 a.navbar-brand(href='#!') Start Bootstrap
-                a.btn.btn-primary(href='#signup') Sign Up
+                a.btn.btn-primary(href='#mint') Mint
 
         // Masthead
-        header.masthead
+        header#mint.masthead
             .container.position-relative
                 .row.justify-content-center
                     .col-xl-6
@@ -39,42 +39,11 @@ html(lang='en')
                             // Page heading
                             h1.mb-5 Mint your own Boba Tea!
 
-                            // Signup form
+                            // Email address input
+                            .row
+                                .col
+                                    button#submitButton.btn.btn-primary.btn-lg.enabled(type='submit') MINT
 
-                            // * * * * * * * * * * * * * * *
-                            // * * SB Forms Contact Form * *
-                            // * * * * * * * * * * * * * * *
-
-                            // This form is pre-integrated with SB Forms.
-                            // To make this form functional, sign up at
-                            // https://startbootstrap.com/solution/contact-forms
-                            // to get an API token!
-
-                            form.form-subscribe#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                                // Email address input
-                                .row
-                                    .col
-                                        button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') MINT
-
-                                // Submit success message
-                                //
-                                // This is what your users will see when the form
-                                // has successfully submitted
-
-                                #submitSuccessMessage.d-none
-                                    .text-center.mb-3
-                                        .fw-bolder Form submission successful!
-                                        p To activate this form, sign up at
-                                        a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                                // Submit error message
-                                //
-                                // This is what your users will see when there is
-                                // an error submitting the form
-
-                                #submitErrorMessage.d-none
-                                    .text-center.text-danger.mb-3 Error sending message!
 
         // Icons Grid
         section.features-icons.bg-light.text-center
