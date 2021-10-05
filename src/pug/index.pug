@@ -25,6 +25,9 @@ html(lang='en')
         // The legacy-web3 script must run BEFORE your other scripts.
         script(src='https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js')
 
+        // Detect provider - Checks if MetaMask is installed    
+        script(src='https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js')
+
         // Global site tag (gtag.js) - Google Analytics
         script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-Q9SCTJ3PXC')
         script.
@@ -57,7 +60,7 @@ html(lang='en')
                   i.bi.bi-twitter
                 a.btn.btn-outline-dark(href='https://discord.gg/QBQdUverCJ')
                   i.bi.bi-discord
-                a.btn.btn-primary(href='#!') Connect Wallet
+                a#connectButton.btn.btn-primary(href='#!') Connect Wallet
 
         // Masthead
         header#mint.masthead
