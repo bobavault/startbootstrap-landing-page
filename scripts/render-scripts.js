@@ -13,6 +13,9 @@ module.exports = function renderScripts() {
 
     const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/scripts.js');
     const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/scripts.js');
+
+    const sourcePathScriptsJS = upath.resolve(upath.dirname(__filename), '../src/js/web3.min.js');
+    const destPathScriptsJS = upath.resolve(upath.dirname(__filename), '../dist/js/web3.min.js');
     
     const copyright = `/*!
 * Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
