@@ -151,6 +151,19 @@ html(lang='en')
         // Core theme JS
         script(src='js/scripts.js')
 
+        // Web3 JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.0/web3.min.js')
+
+        // Web3 test
+        script.
+            var Web3 = require('web3');
+            var provider = 'https://mainnet.infura.io/v3/7ab054b248d94101ac96bd8bec7fcbed';
+            var web3Provider = new Web3.providers.HttpProvider(provider);
+            var web3 = new Web3(web3Provider);
+            web3.eth.getBlockNumber().then((result) => {
+            console.log("Latest Ethereum Block is ",result);
+            });
+
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         // * *                               SB Forms JS                               * *
         // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
