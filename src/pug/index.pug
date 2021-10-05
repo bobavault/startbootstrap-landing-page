@@ -22,10 +22,6 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-<<<<<<< HEAD
-        // Web3js
-        script(src='js/scripts.js')
-
         // Global site tag (gtag.js) - Google Analytics
         script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-Q9SCTJ3PXC')
         script.
@@ -34,8 +30,6 @@ html(lang='en')
           gtag('js', new Date());
           gtag('config', 'G-Q9SCTJ3PXC');
 
-=======
->>>>>>> parent of f2b5bc4 (Google analytics)
     body
 
         // Navigation
@@ -61,19 +55,6 @@ html(lang='en')
                         // Page heading
                         h1.mb-4 10,000 unique Boba Teas!
                         p.mb-5.lead We're building an exclusive Boba Vault and your Boba Tea NFTs are the ticket! You'll get exclusive access to future NFT drops #{'('}e.g. BobaMonsters#{')'}, passive earnings model, and future dApps.
-
-                        // Get blocknumber (test)
-                        p#blockNumber
-
-                        // Script to get latest blocknumber
-                        script.
-                            var web3 = new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
-                            async function writeBlock(){
-                            var block = await web3.eth.getBlock('latest');
-                            document.getElementById("blockNumber").innerHTML = "block.number: " + block.number;
-                            }
-                            writeBlock();
-
 
                         // Minting button
                         .row
