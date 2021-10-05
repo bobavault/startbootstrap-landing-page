@@ -4,10 +4,10 @@
 import('https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js')
 import('https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js')
 
-(function(){
+function codeAddress(){
 	// this returns the provider, or null if it wasn't detected
 	const provider = await detectEthereumProvider();
-})();
+}
 
 
 if (provider) {
